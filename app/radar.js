@@ -17,7 +17,6 @@ export class PieReact extends React.Component {
 
     componentDidMount() {
         //外部传入的data数据
-        console.log(this.props.data);
          let myChart = echarts.init(this.refs.pieReact); //初始化echarts
 
          //我们要定义一个setPieOption函数将data传入option里面
@@ -29,7 +28,7 @@ export class PieReact extends React.Component {
     render() {
         return (
             <div className="pie-react">
-                <div ref="pieReact" style={{width: "100%", height: "50%"}}></div>
+                <div ref="pieReact" style={{width: "100%", height: "500px"}}></div>
             </div>
         )
     }
@@ -44,9 +43,8 @@ export class PieReact extends React.Component {
                 trigger: 'axis'
             },
             legend: {
-                orient: 'vertical',
                 left: 'left',
-                data:['XXX','yyy']
+                data:['同学','班级']
             },
             toolbox: {
                 show : true,
@@ -78,7 +76,7 @@ export class PieReact extends React.Component {
                     data : [
                         {
                             value : [97, 72, 88, 94, 90, 86],
-                            name : 'X同学',
+                            name : '同学',
                             itemStyle: {
                                 normal: {
                                     areaStyle: {
@@ -92,7 +90,7 @@ export class PieReact extends React.Component {
                         },
                         {
                             value : [97, 62, 74, 95, 88, 92],
-                            name : '班级情况',
+                            name : '班级',
                             itemStyle: {
                                 normal: {
                                     lineStyle: {
