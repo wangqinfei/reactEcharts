@@ -4,9 +4,9 @@
 import React, { Component } from 'react';
 
 //导入echarts
-var echarts = require('echarts/lib/echarts') //必须
-require('echarts/lib/chart/radar') //图表类型
-require('echarts/lib/component/title') //标题插件
+var echarts = require('echarts/lib/echarts'); //必须
+require('echarts/lib/chart/radar'); //图表类型
+require('echarts/lib/component/title'); //标题插件
 
 export class PieReact extends React.Component {
 
@@ -73,33 +73,7 @@ export class PieReact extends React.Component {
                 {
                     name: '考试成绩数据',
                     type: 'radar',
-                    data : [
-                        {
-                            value : [97, 72, 88, 94, 90, 86],
-                            name : '同学',
-                            itemStyle: {
-                                normal: {
-                                    areaStyle: {
-                                        type: 'default'
-                                    },
-                                    label: {
-                                        show: true
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            value : [97, 62, 74, 95, 88, 92],
-                            name : '班级',
-                            itemStyle: {
-                                normal: {
-                                    lineStyle: {
-                                        type: 'dashed'
-                                    }
-                                }
-                            }
-                        }
-                    ]
+                    data : data
                 }
             ]
         };

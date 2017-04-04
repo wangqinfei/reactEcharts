@@ -10,19 +10,22 @@ var Home = React.createClass({
     render () {
         var data = [
             {
-                value : [120, 118, 130, 100, 99, 70],
-                name : '张三',
+                value : [97, 72, 88, 94, 90, 86],
+                name : '同学',
                 itemStyle: {
                     normal: {
-                        lineStyle: {
-                            type: 'dashed'
+                        areaStyle: {
+                            type: 'default'
+                        },
+                        label: {
+                            show: true
                         }
                     }
                 }
             },
             {
-                value : [90, 113, 140, 30, 70, 60],
-                name : '李四',
+                value : [97, 62, 74, 95, 88, 92],
+                name : '班级',
                 itemStyle: {
                     normal: {
                         lineStyle: {
